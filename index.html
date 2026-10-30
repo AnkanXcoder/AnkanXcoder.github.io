@@ -114,6 +114,29 @@
 		.zoom-effect:hover {
 			transform: scale(1.1);
 		}
+
+		.project-card {
+			transition: transform 0.35s ease, box-shadow 0.35s ease;
+		}
+
+		.project-card:hover,
+		.project-card:focus-within {
+			transform: translateY(-8px);
+			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.project-card,
+			.zoom-effect {
+				transition: none;
+			}
+
+			.project-card:hover,
+			.project-card:focus-within,
+			.zoom-effect:hover {
+				transform: none;
+			}
+		}
 	</style>
 
 
@@ -449,8 +472,8 @@
 				</div>
 			</div>
 			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
+				<div class="col-md-4 d-flex ftco-animate" data-animate-effect="fadeInLeft">
+					<div class="blog-entry project-card justify-content-end">
 						<a href="https://github.com/AnkanXcoder/Indian_Road_Accident_Analysis"
 							class="block-20 zoom-effect" style="background-image: url('images/proj_1_.png');">
 						</a>
@@ -470,8 +493,8 @@
 				</div>
 
 
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
+				<div class="col-md-4 d-flex ftco-animate" data-animate-effect="fadeInUp">
+					<div class="blog-entry project-card justify-content-end">
 						<a href="https://github.com/AnkanXcoder/ecommerce-analysis.git" class="block-20 zoom-effect"
 							style="background-image: url('images/proj_2.png');">
 						</a>
@@ -486,8 +509,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
+				<div class="col-md-4 d-flex ftco-animate" data-animate-effect="fadeInRight">
+					<div class="blog-entry project-card">
 						<a href="https://github.com/AnkanXcoder/Bank_Management_Project.git" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
@@ -504,8 +527,8 @@
 			<br>
 			<!-- added justify-content-center to center align the last three projects -->
 			<div class="row d-flex justify-content-center">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
+				<div class="col-md-4 d-flex ftco-animate" data-animate-effect="fadeInLeft">
+					<div class="blog-entry project-card justify-content-end">
 						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
@@ -515,8 +538,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
+				<div class="col-md-4 d-flex ftco-animate" data-animate-effect="fadeInUp">
+					<div class="blog-entry project-card justify-content-end">
 						<a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
@@ -526,8 +549,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
+				<div class="col-md-4 d-flex ftco-animate" data-animate-effect="fadeInRight">
+					<div class="blog-entry project-card justify-content-end">
 						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');">
 						</a>
 						<div class="text mt-3 float-right d-block">
